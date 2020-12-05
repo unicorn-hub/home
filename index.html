@@ -734,15 +734,18 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-form pt-30">
-                        <form id="contact-form" action="https://gorgeously.org:5001/contact">
+                        <form id="contact-form" action="https://gorgeously.org:5001/contact" method="post">
                             <div class="single-form">
-                                <input type="text" name="name" placeholder="Name">
+                                <input type="text" name="name" id="name" placeholder="Name">
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <input type="email" name="email" placeholder="Email">
+                                <input type="email" name="email" id="email" placeholder="Email">
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <textarea name="message" placeholder="Message"></textarea>
+                                <textarea name="subject" id="subject" placeholder="subject"></textarea>
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
                             </div> <!-- single form -->
                             <p class="form-message"></p>
                             <div class="single-form">
