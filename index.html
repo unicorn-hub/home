@@ -30,6 +30,17 @@ src="https://www.facebook.com/tr?id=449348609792220&ev=PageView&noscript=1"
 
   gtag('config', 'G-4LQN38P1XJ');
 </script>
+    
+    <script>
+    const Http = new XMLHttpRequest();
+const url='https://gorgeously.org:5001/visit';
+Http.open("GET", url);
+Http.send();
+
+Http.onreadystatechange = (e) => {
+  console.log(Http.responseText)
+}
+    </script>
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
